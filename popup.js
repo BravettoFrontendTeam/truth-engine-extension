@@ -11,8 +11,9 @@
  * Answer: Inline everything, no separate functions, just execute
  */
 
-// YAGNI: Configurable API URL - defaults to localhost, can be changed for production
-const API_URL = process.env.TRUTH_API_URL || 'http://localhost:3001/api/truth';
+// YAGNI: Hardcoded API URL - update this for production
+// JØHN: process.env doesn't work in browser extensions
+const API_URL = 'http://localhost:3001/api/truth';
 
 // YAGNI: Inline everything - no separate functions, just execute
 (async () => {
